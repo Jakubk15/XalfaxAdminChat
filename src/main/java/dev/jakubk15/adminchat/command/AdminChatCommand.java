@@ -27,7 +27,7 @@ public class AdminChatCommand extends SimpleCommand {
 		final String senderName = p.getDisplayName();
 		for (final Player adm : Bukkit.getOnlinePlayers()) {
 			if (adm.hasPermission("xalfax.adminchat")) {
-				adm.sendMessage(Settings.PLUGIN_PREFIX + " " + ChatColor.RED + senderName + ChatColor.GRAY + ": " + ChatColor.WHITE + args[1]);
+				adm.sendMessage(Settings.PLUGIN_PREFIX + " " + ChatColor.RED + senderName + ChatColor.GRAY + ": " + ChatColor.WHITE + args[0]);
 			}
 		}
 	}
