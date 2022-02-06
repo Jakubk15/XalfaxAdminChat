@@ -10,7 +10,7 @@
     <artifactId>adminchat</artifactId>
 
     <!-- Change to your plugin's name. Can contain capital letters, but do NOT use spaces. -->
-    <name>XalfaxAdminChat</name>
+    <name>Adminchat</name>
 
     <!-- Change to the appropriate plugin's version you have. -->
     <version>1.0.0</version>
@@ -21,7 +21,7 @@
     <properties>
 
         <!-- Change to your name or the main collaborator. -->
-        <author>Xalfax</author>
+        <author>Jakubk15</author>
 
         <!-- Change to the full path where your main class extending SimplePlugin is. -->
         <main.class>dev.jakubk15.adminchat.AdminChat</main.class>
