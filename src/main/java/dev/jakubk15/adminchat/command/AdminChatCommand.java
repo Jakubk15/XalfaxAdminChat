@@ -24,10 +24,6 @@ public class AdminChatCommand extends SimpleCommand {
 		checkArgs(1, "&cPodaj wiadomość!");
 		final Player p = getPlayer();
 		final String senderName = p.getDisplayName();
-		for (final Player adm : Bukkit.getOnlinePlayers()) {
-			if (adm.hasPermission("xalfax.adminchat")) {
-				Common.tell(adm, "&3┃ &9&lADMINCHAT &3┃ &6" + senderName + " &8» &3" + args[0]);
-			}
-		}
+		Common.broadcastWithPerm("xalfax.adminchat", "&3┃ &c&lADMINCHAT &3┃ &6" + getPlayer().getName() + " &8» &3" + Common.joinRange(0, args), false);
 	}
 }
